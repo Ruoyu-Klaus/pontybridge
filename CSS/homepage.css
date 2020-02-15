@@ -1,0 +1,406 @@
+/* 
+    This CSS file is made for PontyBridge website homepage(index)
+    Author:Ruoyu Wang
+    Email:WangR47@cardiff.ac.uk
+*/
+
+
+
+/* This is about centre part */
+.box2{
+    background-color: #9A55B2;
+    box-sizing: border-box;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: wheat;
+}
+
+.box2.txt{
+    color: whitesmoke;
+}
+.box2.container::after{
+    content: "";
+    display: block;
+    border-bottom: 5px solid; 
+    margin-top: 20px;
+}
+
+.main2{
+    margin-top: 2vw;
+    box-sizing: border-box;
+}
+.mainbody .section2 h1{
+    color:rgb(27, 1, 0);
+}
+.mainbody.study{
+    width: 48%;  
+}
+.study img{
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* 
+    Making Box-shadow
+    Taken from w3schools 
+    Accessed 22-10-2019
+    https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+    Code: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ]]
+    End of the referenced code. 
+    */
+}
+.mainbody.research{
+    width:48%;  
+}
+
+.research img{
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* 
+    Making Box-shadow
+    Taken from w3schools 
+    Accessed 22-10-2019
+    https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+    Code: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ]]
+    End of the referenced code. 
+    */
+}
+.quote.core{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw 0 5vw 0;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+}
+
+.section1.list{
+    display: grid;
+}
+.section1.list h1{
+    color: white;
+    font-size: 3rem;
+}
+.section1.list p{
+    font-style: italic;
+}
+.quote.section2{
+    width: 35vw;
+}
+.quote.section2 img{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* 
+    Making Box-shadow
+    Taken from w3schools 
+    Accessed 22-10-2019
+    https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+    Code: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ]]
+    End of the referenced code. 
+    */
+}
+
+.main3{
+    margin-top: 5vh;
+}
+ul.section1.list{
+    list-style-type: none;
+}
+.news.image1 a,.news.image2 a,.news.image3 a{
+    height: 40vh;
+    width: 100%;
+    display: inline-block;
+}
+.news .content a{
+    color:rgb(27, 1, 0)
+}
+
+/* ----------------This is for mobile devices-------------------------- */
+@media screen and (max-width: 684px) {
+
+/* box2 main1 */
+    .main1{
+        color: rgb(0, 0, 0);
+    }
+    .heading{
+        display: none;
+    }
+    .discription{
+        display: none;
+    }
+    .headingformobil{
+        font-size: 1.2rem;
+        width: 80vw;
+        margin: 10px auto;
+    }
+    .discriptionformobil{
+        padding: 1%;
+        text-indent: 0.5rem;
+        font-size: 1rem;
+        border-width: 2px 0 2px 0;
+        border-style:dashed;
+    }
+    .imageformobil img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* 
+    Making Box-shadow
+    Taken from w3schools 
+    Accessed 22-10-2019
+    https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+    Code: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ]]
+    End of the referenced code. 
+    */
+    }
+/* box2 main2 */
+    .main2.wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .mainbody.core{
+        padding-bottom: 15px;
+    }
+    .mainbody.study,.mainbody.research{
+        width: 100%;
+    }
+    .quote.section1{
+        font-size: 0.8rem;
+        width:100vw;
+    }
+    .section1.list h1{
+        font-size: 2rem;
+    }
+    .quote.section2{
+        display: none;
+    }
+  
+
+/* box2 main3 */
+    .main3.news{
+        display: flex;
+        flex-direction: column;
+        font-size: 5vw;
+    }
+    .news.image1{
+        order: 1;
+        background-image:url('../imge/4381948277_66eb46cc2e_o copy.jpg');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 40vh;
+        border-radius:20px 20px 20px 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* 
+    Making Box-shadow
+    Taken from w3schools 
+    Accessed 22-10-2019
+    https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+    Code: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ]]
+    End of the referenced code. 
+    */
+    }
+    .news1.content{
+        order:2;
+        margin: 4vw;
+    }
+    .news.image2{
+        order: 3;
+        background-image:url('../imge/7395786858_e6b4bd33d4_o copy.jpg');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        min-height: 40vh;
+        background-size: cover;
+        border-radius:20px 20px 20px 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* 
+    Making Box-shadow
+    Taken from w3schools 
+    Accessed 22-10-2019
+    https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+    Code: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ]]
+    End of the referenced code. 
+    */
+    }
+    .news2.content{
+        order: 4;
+        margin: 4vw;
+    }
+    .news.image3{
+        order: 5;
+        background-image:url('../imge/460865053_a3b44115ce_o copy.jpg');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        min-height: 40vh;
+        background-size: cover;
+        border-radius:20px 20px 20px 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* 
+    Making Box-shadow
+    Taken from w3schools 
+    Accessed 22-10-2019
+    https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+    Code: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ]]
+    End of the referenced code. 
+    */
+    }
+    .news3.content{
+        order: 6;
+        margin: 4vw;
+    }
+
+}
+
+
+
+/* -------------------This is for desktop--------------------  */
+@media screen and (min-width:685px) {
+
+/* Box2 */
+    .box2{
+        width:80vw;
+    }
+/* main1 */
+    .headingformobil{
+        display: none;
+    }
+    .discriptionformobil{
+        display: none;
+    }
+    .imageformobil{
+        display: none;
+    }
+    .box2.txt{
+        background-image: url("../imge/14905981935_899f9cfcfb_o%20copy.jpg" ); 
+        /* Image source:
+            James F Clay. August 12, 2014. 
+            Legoland Miniland. [Online]. [access date: 16/10/2019]. 
+            Available from: https://www.flickr.com/photos/jamesclay/14905981935 
+         */
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-size: 100%;
+        background-position: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* 
+        Making Box-shadow
+        Taken from w3schools 
+        Accessed 22-10-2019
+        https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+        Code: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ]]
+        End of the referenced code. 
+        */
+        display: grid;
+        grid-template-rows: 20vw;
+        min-height: 30vw;
+    }
+    .discription{
+        grid-row: 2/3;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding:30px;
+        border-radius: 0 0 10px 10px;
+    }
+    .discription p{
+        padding-left: 60px;
+        padding-top: 5px;
+    }
+/* main2 */
+    .mainbody.core{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mainbody.study:hover{
+        transform: translate(5px,5px);
+        transition: transform .3s ease-in-out;
+    }
+    .mainbody.research:hover{
+        transform: translate(5px,5px);
+        transition: transform .3s ease-in-out;
+    }
+    .quote.section1{
+        width:45vw;
+    }
+    .section1.list{
+        grid-gap: 4vw;
+    }
+
+    .quote.section2 img{
+        height: 100%;
+        width: 100%;
+    }
+    
+/* main3 */
+    .main3{
+        display: grid;
+        grid-template-columns: 32% 33% 32%;
+        grid-column-gap: 10px;
+    }
+    .main3 > .news:hover{
+        transform: translate(5px,-10px);
+        transition: transform .3s ease-in-out;
+        cursor: pointer;  
+    }
+
+    .news.image1 {
+        background-image:url('../imge/4381948277_66eb46cc2e_o copy.jpg');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 40vh;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        border-radius:20px 0 0 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* 
+        Making Box-shadow
+        Taken from w3schools 
+        Accessed 22-10-2019
+        https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+        Code: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ]]
+        End of the referenced code. 
+        */
+    }
+
+    .news.image2 {
+        background-image:url('../imge/7395786858_e6b4bd33d4_o copy.jpg');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .news.image3 {
+        background-image:url('../imge/460865053_a3b44115ce_o copy.jpg');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-row: 1/2;
+        grid-column: 3/4;
+        border-radius: 0 25px 20px 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* 
+        Making Box-shadow
+        Taken from w3schools 
+        Accessed 22-10-2019
+        https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+        Code: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ]]
+        End of the referenced code. 
+        */
+    }
+
+    .news1{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        font-size: 1.4rem;
+    }    
+    .news2{
+        grid-row: 2/3;
+        grid-column: 2/3;
+        font-size: 1.4rem;
+    }
+    .news3{
+        grid-row: 2/3;
+        grid-column: 3/4;
+        font-size: 1.4rem;
+    }      
+}

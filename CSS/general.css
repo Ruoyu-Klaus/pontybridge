@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin:0 auto;
+    font-size:1em;
+    width:80vw;
+    background-color:#9A55B2;
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-template-rows:auto;
+    grid-gap: 20px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Quattrocento', serif;
+}
+p,a{
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.box1{
+    box-sizing: border-box;
+    background-color: #a993ff;
+    padding-left: 5px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+/* ----------------This is for mobile devices-------------------------- */
+@media screen and (max-width: 684px) {
+    /* body */
+        body{
+            font-size: 0.8rem;
+            width:100vw;
+            border:0;
+            grid-template-columns: 100vw;
+        }
+        .box2{
+            width:94vw;
+            margin: 0 auto;
+        }
+    /* box1 */
+        .box1{
+            padding-bottom: 3vh;
+        }
+        /* 
+        Making Hamburger-menu for navigation bar
+        This code was adapted from www.bilibili.com post by CodingStartup, 07-30-2019
+        Accessed 20-10-2019
+        https://www.bilibili.com/video/av61410145
+        Added code to creat a checkbox
+        */
+      
+        .navForDesktop{
+            float: left;
+            width:84vw;
+        }
+        .navForDesktop a{
+            font-size: 5vw;
+            width:30vw;
+            display: inline-block;
+        }
+        .nav_right{
+            display: none;
+        }
+        .menuformobile{
+            padding-top: 10px;
+            display: inline-block;
+        }
+        .menu-items li{
+            border-bottom: 1px solid black ;
+        }
+        .menuformobile.burger{
+            display: block;
+        }
+        .menuformobile.burger span{
+            display: block;
+            width: 8vw;
+            height: 5px;
+            background-color: black;
+            margin: 5px 0;
+            position: relative;
+            transition: transform .3s ease-in-out;
+            transition: top .3s ease-in-out .2s;
+            top:0px;
+        }
+        #toggle:checked + label span:nth-child(1){
+            transform: rotate(45deg);
+            top:10px;
+            transition: top .3s ease-in-out ;
+            transition: transform .3s ease-in-out .2s;
+        }
+        #toggle:checked + label span:nth-child(2){
+            transform:scaleY(0);
+            transition: transform .3s ease-in-out .2s;
+        }
+        #toggle:checked + label span:nth-child(3){
+            transform: rotate(-45deg);
+            top:-10px;
+            transition: top .3s ease-in-out ;
+            transition: transform .3s ease-in-out .2s;
+        }
+    
+        #toggle{
+            display: none;
+        }
+        .menu-items{
+            width:100vw;
+            margin-top: 5vw;
+            margin-left: -85vw;
+            background-color: #9A55B2;
+            position: absolute;
+            transform: scaleY(0);
+            transform-origin: 50% 0;
+            transition: transform .3s ease-in-out;
+        }
+        #toggle:checked ~ .menu-items{
+            display: block;
+            transform:scaleY(1);
+        }
+        /* End of the referenced code */
+    }
+
+
+/* -------------------This is for desktop--------------------  */
+@media screen and (min-width:685px) {
+    /* Box1 */
+        .box1{
+            padding-bottom: 5vh;
+        }
+        .menuformobile{
+            display: none;
+        }
+        .navForDesktop {
+            margin: 3px;
+            font-size: 2.5vmax;
+            display: inline-block;
+        }
+        .nav_right{
+            margin-left: 20vw;
+            float: right;
+            font-size: 2vmax; 
+        }
+        .nav_right a{
+            margin: 10px;
+            display: inline-block;
+            color:rgb(27, 1, 0);
+        }
+        .navForDesktop a:hover{
+            transform: scale(1.2);
+            transition: transform .3s ease-in-out;
+        }
+    }
+
+/* this is about footer */
+
+.box3{
+    background-color:#a993ff;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 5px 8px 8px 5px;
+}
+
+.footer.left{
+    width: fit-content;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.footer.right{
+    width: fit-content;
+    font-size: 1.5rem;
+    float: right;
+}
